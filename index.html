@@ -1,1 +1,328 @@
-<h1>Hi</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lunar Hounds – Generative Ordinals Collection</title>
+  <link rel="stylesheet" href="assets/style5.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Rajdhani:wght@500;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- Background Stars -->
+  <div id="stars"></div>
+
+  <!-- Header & Nav -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">LUNAR HOUNDS</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#families">Families</a>
+        <a href="#wildtails">Wild Tails</a>
+        <a href="#mint">Mint</a>
+        <a href="#media">Media</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section - Title, Moon, Dog, Subtitle, Button -->
+  <section class="hero" id="home">
+    <!-- Glowing Moon -->
+    <div class="moon"></div>
+
+    <!-- Floating Hound (Centered Over Moon) -->
+    <div class="hound-svg" id="hound-canvas"></div>
+
+    <!-- Main Title: Positioned Above Moon -->
+    <h1 class="hero-title">LUNAR HOUNDS</h1>
+
+    <!-- Subtitle + Mint Button -->
+    <div class="hero-tagline">
+      <p>A generative Ordinals collection, minted on-demand</p>
+      <a href="https://gamma.io/collections/lunar-hounds" target="_blank" class="btn-primary">Mint on Gamma</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">Born from the Moon’s Code</h2>
+      <div class="about-content">
+        <p class="placeholder-text">
+          <h3 class="section-content"> 
+                <center> 🌕🐺 Lunar Hounds - 
+A Generative Tribute to $DOG and Its Community </center> 
+</br>
+<center>“To the Moon — not alone, but together.” </center></h3>
+</br>
+</br>
+
+Lunar Hounds is a 1500-piece generative PFP collection inscribed on Bitcoin Ordinals — a heartfelt tribute to the $DOG token and the vibrant, howling community that surrounds it.
+Each hound is a personified character, a soul in the pack — eyes filled with purpose, heads held high, carrying their own story across the stars. While each piece is unique, they share a recognizable kinship — a visual DNA that reflects the unity within the $DOG community: diverse, loyal, bold.</h4>
+</br>
+</br>
+🔍 Layers of Meaning in Every Pixel
+    • The floating bits in the background are not random static — they represent cosmic debris: the fragments and noise that surround us in this digital space. We all carry some, but it makes the cosmos richer.
+    • Each hound’s eyes are a window to their nature. Sometimes you’ll see a bare, direct gaze — piercing, calm, or mysterious. Other times, that gaze is shielded behind sunglasses, adding style, secrecy, or swagger.
+    • They all wear hoodies — a kind of soft uniform, signaling belonging. Different colors and cuts, but always tied to the pack. It’s not about rank — it’s about identity.
+    • Some hounds appear lone-wolfish, while others feel like natural leaders, companions, or oddballs. That’s part of the design — a personified ecosystem where characters might even form friend groups, create clans, or develop hidden lore.
+</br>
+</br>
+
+💫 A Note from the Creator - 
+This collection took me nearly a year to build — pixel by pixel, line by line. There were moments of flow and moments of struggle, but through it all, I stayed close to what this was meant to be: a playful, poetic, and heartfelt tribute to $DOG and to the culture we’re building together.
+The generative code, the artwork, the tweaking — all of it has been a labor of love. Every trait, every combo, every stray pixel was placed with intent.
+To explore each Hound’s unique identity, click the green rectangle in the top-left corner of the screen to reveal their metadata attributes. You’ll find fragments of their story in there — waiting for interpretation.
+
+</br>
+</br>
+
+As $DOG continues its journey to the moon, Lunar Hounds is a creative howl into the stars — celebrating the meme, the mission, and the wild joy of building something weird and beautiful together.
+</br>
+</br>
+From one builder to the pack:
+Thank you for howling with me.
+
+</br>
+</br>  
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>1500</strong>
+            <span>Total Hounds</span>
+          </div>
+          <div class="stat">
+            <strong>9</strong>
+            <span>Named Families</span>
+          </div>
+          <div class="stat">
+            <strong>On-Demand</strong>
+            <span>Minting via p5.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Families Section -->
+  <section class="section dark" id="families">
+    <div class="container">
+      <h2 class="section-title">The Nine Families</h2>
+      <p class="section-subtitle">Lineages bound by purpose, not blood</p>
+      <div class="grid">
+        <div class="card">
+          <img src="assets/celestial-warriors.jpg" alt="Celestial Warriors" class="card-img" onerror="this.src='https://via.placeholder.com/300x300?text=Celestial+Warriors'">
+          <h3>Celestial Warriors <span class="sigil">⚔️</span></h3>
+          <p>6–10 members | Protectors of the cosmic balance</p>
+        </div>
+        <div class="card">
+          <img src="assets/digital-sages.jpg" alt="Digital Sages" class="card-img" onerror="this.src='https://via.placeholder.com/300x300?text=Digital+Sages'">
+          <h3>Digital Sages <span class="sigil">🧠</span></h3>
+          <p>6–10 members | Keepers of ancient code</p>
+        </div>
+        <div class="card">
+          <img src="assets/ancient-guardians.jpg" alt="Ancient Guardians" class="card-img" onerror="this.src='https://via.placeholder.com/300x300?text=Ancient+Guardians'">
+          <h3>Ancient Guardians <span class="sigil">🛡️</span></h3>
+          <p>6–10 members | Eternal watchers of the veil</p>
+        </div>
+        <div class="card">
+          <img src="assets/shadow-walkers.jpg" alt="Shadow Walkers" class="card-img" onerror="this.src='https://via.placeholder.com/300x300?text=Shadow+Walkers'">
+          <h3>Shadow Walkers <span class="sigil">👤🌑</span></h3>
+          <p>6–10 members | Masters of the unseen path</p>
+        </div>
+        <div class="card">
+          <img src="assets/luminous-dreamers.jpg" alt="Luminous Dreamers" class="card-img" onerror="this.src='https://via.placeholder.com/300x300?text=Luminous+Dreamers'">
+          <h3>Luminous Dreamers <span class="sigil">💭</span></h3>
+          <p>6–10 members | Weavers of light and thought</p>
+        </div>
+        <div class="card">
+          <img src="assets/brave-hearts.jpg" alt="Brave Hearts" class="card-img" onerror="this.src='https://via.placeholder.com/300x300?text=Brave+Hearts'">
+          <h3>Brave Hearts <span class="sigil">❤️</span></h3>
+          <p>6–10 members | Courage in the void</p>
+        </div>
+        <div class="card">
+          <img src="assets/hodl-legends.jpg" alt="HODL Legends" class="card-img" onerror="this.src='https://via.placeholder.com/300x300?text=HODL+Legends'">
+          <h3>HODL Legends <span class="sigil">🪙</span></h3>
+          <p>6–10 members | Timeless believers</p>
+        </div>
+        <div class="card">
+          <img src="assets/cosmic-explorers.jpg" alt="Cosmic Explorers" class="card-img" onerror="this.src='https://via.placeholder.com/300x300?text=Cosmic+Explorers'">
+          <h3>Cosmic Explorers <span class="sigil">🚀</span></h3>
+          <p>6–10 members | Voyagers of the unknown</p>
+        </div>
+        <div class="card">
+          <img src="assets/mysterious-prophets.jpg" alt="Mysterious Prophets" class="card-img" onerror="this.src='https://via.placeholder.com/300x300?text=Mysterious+Prophets'">
+          <h3>Mysterious Prophets <span class="sigil">🔮</span></h3>
+          <p>6–10 members | Seers of the coming age</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wild Tails Section -->
+  <section class="section" id="wildtails">
+    <div class="container">
+      <h2 class="section-title">Wild Tails: Children of the Moon’s Glow</h2>
+      <p class="section-subtitle">Defined by the aura behind them</p>
+      <div class="aura-grid">
+        <div class="aura" style="--color: #C0C0C0">
+          <span class="sigil">🪙</span>
+          <strong>Silver Pack</strong><br>
+          Silver Mist · #C0C0C0
+        </div>
+        <div class="aura" style="--color: #D3D3D3">
+          <span class="sigil">🔘</span>
+          <strong>Pewter Pack</strong><br>
+          Pewter Glow · #D3D3D3
+        </div>
+        <div class="aura" style="--color: #E5E4E2">
+          <span class="sigil">💎</span>
+          <strong>Platinum Pack</strong><br>
+          Platinum Shine · #E5E4E2
+        </div>
+        <div class="aura" style="--color: #FFD700">
+          <span class="sigil">☀️</span>
+          <strong>Sun Pack</strong><br>
+          Golden Dawn · #FFD700
+        </div>
+        <div class="aura" style="--color: #FFA07A">
+          <span class="sigil">🌅</span>
+          <strong>Dawn Pack</strong><br>
+          Amber Light · #FFA07A
+        </div>
+        <div class="aura" style="--color: #D2B48C">
+          <span class="sigil">🏜️</span>
+          <strong>Dust Pack</strong><br>
+          Warm Sand · #D2B48C
+        </div>
+        <div class="aura" style="--color: #708090">
+          <span class="sigil">⛈️</span>
+          <strong>Storm Pack</strong><br>
+          Storm Cloud · #708090
+        </div>
+        <div class="aura" style="--color: #36454F">
+          <span class="sigil">🪵</span>
+          <strong>Charcoal Pack</strong><br>
+          Charcoal Mist · #36454F
+        </div>
+        <div class="aura" style="--color: #FFFFFF">
+          <span class="sigil">✨</span>
+          <strong>Light Pack</strong><br>
+          Pure White · #FFFFFF
+        </div>
+        <div class="aura" style="--color: #CDBE91">
+          <span class="sigil">🕰️</span>
+          <strong>Vintage Pack</strong><br>
+          Vintage Cream · #CDBE91
+        </div>
+        <div class="aura" style="--color: #D4AF37">
+          <span class="sigil">🥇</span>
+          <strong>Gold Pack</strong><br>
+          Antique Gold · #D4AF37
+        </div>
+        <div class="aura" style="--color: #FFFFE0">
+          <span class="sigil">📜</span>
+          <strong>Parchment Pack</strong><br>
+          Lemon Glow · #FFFFE0
+        </div>
+      </div>
+      <p class="placeholder-text" style="margin-top: 30px;">
+        [Add a paragraph about Wild Tails — how they’re the untamed spirits, defined only by the color of the moon behind them. No family, only aura.]
+      </p>
+    </div>
+  </section>
+
+  <!-- Generative Showcase / Mint Section -->
+  <section class="section dark" id="mint">
+    <div class="container">
+      <h2 class="section-title">Minted On-Demand</h2>
+      <p class="section-subtitle">Each hound is drawn live in your browser</p>
+      <div class="p5-container">
+        <img src="img/generation-demo.gif" alt="Generation Demo" style="width:100%; max-width:600px; border-radius:12px;" onerror="this.src='https://via.placeholder.com/600x300?text=p5.js+Generation+Demo'">
+      </div>
+      <a href="https://gamma.io/collections/lunar-hounds" target="_blank" class="btn-primary" style="margin-top: 30px;">Mint on Gamma</a>
+      <p class="placeholder-text" style="margin-top: 20px;">
+        [Add minting instructions: “Connect your Ordinals-compatible wallet. Each mint generates a unique Lunar Hound using p5.js and inscribes it directly to Bitcoin.”]
+      </p>
+    </div>
+  </section>
+
+  <!-- Media Section -->
+  <section class="section" id="media">
+    <div class="container">
+      <h2 class="section-title">Press & Media</h2>
+      <p class="section-subtitle">Assets for community and press use</p>
+      <div class="media-grid">
+        <a href="videos/trailer.mp4" class="media-item" download>
+          🎬 <strong>Trailer (1min)</strong><br>
+          MP4 · 25MB
+        </a>
+        <a href="img/gallery.zip" class="media-item" download>
+          🖼️ <strong>Gallery Pack</strong><br>
+          ZIP · 120MB
+        </a>
+        <a href="img/logo-white.svg" class="media-item" download>
+          ✨ <strong>Logo (SVG)</strong><br>
+          Transparent background
+        </a>
+        <div class="media-item">
+          📄 <strong>Lore & Backstory</strong><br>
+          PDF · 2MB (coming soon)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">LUNAR HOUNDS</div>
+      <div class="footer-links">
+        <a href="https://twitter.com/" target="_blank">X</a>
+        <a href="https://discord.gg/" target="_blank">Discord</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://ordinalswallet.com/" target="_blank">Ordinals</a>
+      </div>
+      <div class="copyright">
+        © 2025 Lunar Hounds · Generated with <span class="sigil">🌕</span> and p5.js
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple Animation for Stars -->
+  <script>
+    // Generate stars
+    const stars = document.getElementById('stars');
+    for (let i = 0; i < 100; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.animationDelay = `${Math.random() * 3}s`;
+      stars.appendChild(star);
+    }
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    gsap.from(".moon", {
+      y: -20,
+      duration: 4,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut"
+    });
+
+    gsap.from(".hound-svg", {
+      y: 15,
+      duration: 5,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      delay: 0.5
+    });
+  });
+</script>
+</body>
+</html>
