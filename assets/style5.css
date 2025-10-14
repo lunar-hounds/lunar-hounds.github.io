@@ -140,27 +140,38 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   z-index: 1;
 }
 
-/* Floating Hound - Now as SVG Image */
+/* Container for hound logo */
 .hound-svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  /* Use your SVG as background */
-  background: url('assets/pesek2.svg') no-repeat center;
-  background-size: contain;
-
-  /* Glow effect */
+/* Actual image */
+.hound-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
   opacity: 0.95;
+}
 
-  /* Animation */
-  animation: float-hound 5s ease-in-out infinite alternate;
+/* Optional: animate the img */
+.hound-logo {
+  animation: float-hound-img 5s ease-in-out infinite alternate;
   animation-delay: 0.5s;
+}
+
+@keyframes float-hound-img {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(15px); }
 }
 
 /* Main Title - Above the Moon */
@@ -388,6 +399,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   .hero-tagline { top: 74%; }
 
 }
+
 
 
 
