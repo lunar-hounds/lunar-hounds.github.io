@@ -141,22 +141,31 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
 }
 
 /* Floating Hound SVG */
-.hound-svg {
+/* Default: image shows */
+.hound-logo {
+  width: 20%;
+  height: 20%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+  opacity: 0.95;
+}
+
+/* When image fails → hide img, show fallback text */
+.hound-logo.failed {
+  visibility: hidden;
+  position: relative;
+}
+
+.hound-logo.failed::after {
+  content: "🌖"; /* or "LH" or "🐕" */
+  font-size: 80px;
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 180px;
-  height: 180px;
-  z-index: 2;
-}
-
-.hound-svg::after {
-  content: "🐕";
-  font-size: 120px;
-  color: white;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-  display: block;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  visibility: visible;
 }
 
 /* Main Title - Above the Moon */
@@ -382,4 +391,5 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   .hero { padding: 80px 20px 0; }
   .hero-title { top: 34%; }
   .hero-tagline { top: 74%; }
+
 }
