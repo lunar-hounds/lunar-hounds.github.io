@@ -404,13 +404,13 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
 }
 @media (max-width: 768px) {
   .hound-svg {
-    width: 60px;
-    height: 60px; /* Container smaller */
+    width: 100px;
+    height: 100px; /* Container smaller */
   }
 
   .hound-logo {
-    width: 70%;    /* So it doesn't get too tiny */
-    height: 70%;   /* Still looks good */
+    width: 90%;    /* So it doesn't get too tiny */
+    height: 90%;   /* Still looks good */
   }
 
   .moon {
@@ -421,6 +421,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   .hero-title { top: 28%; }
   .hero-tagline { top: 74%; }
 }
+
 
 
 
