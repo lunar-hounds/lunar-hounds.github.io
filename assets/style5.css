@@ -168,10 +168,10 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
     transform: translate(-50%, -50%) translateY(10px); /* starts slightly down */
   }
   50% {
-    transform: translate(-50%, -50%) translateY(-10px); /* floats up */
+    transform: translate(-50%, -50%) translateY(-20px); /* floats up */
   }
   100% {
-    transform: translate(-50%, -50%) translateY(10px); /* floats down */
+    transform: translate(-50%, -50%) translateY(20px); /* floats down */
   }
 }
 
@@ -402,6 +402,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   .hero-tagline { top: 74%; }
 
 }
+
 
 
 
