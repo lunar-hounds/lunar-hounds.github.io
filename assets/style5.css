@@ -163,9 +163,16 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   opacity: 0.95;
 }
 
-@keyframes float-hound-img {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(15px); }
+@keyframes float-hound {
+  0% {
+    transform: translate(-50%, -50%) translateY(10px); /* starts slightly down */
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-10px); /* floats up */
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(10px); /* floats down */
+  }
 }
 
 
@@ -395,6 +402,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   .hero-tagline { top: 74%; }
 
 }
+
 
 
 
