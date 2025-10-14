@@ -163,25 +163,12 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   opacity: 0.95;
 }
 
-/* Floating Animation - Apply to container */
-.hound-svg {
-  animation: float-hound 5s ease-in-out infinite alternate;
-  animation-delay: 0.5s;
-}
-
-@keyframes float-hound {
-  0% {
-    transform: translate(-50%, -50%) translateY(0);
-  }
-  100% {
-    transform: translate(-50%, -50%) translateY(15px);
-  }
-}
-
 @keyframes float-hound-img {
   0% { transform: translateY(0); }
   100% { transform: translateY(15px); }
 }
+
+
 
 /* Main Title - Above the Moon */
 .hero-title {
@@ -408,6 +395,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   .hero-tagline { top: 74%; }
 
 }
+
 
 
 
