@@ -79,7 +79,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   color: #ccc !important;
   font-size: 1.2rem !important;
   line-height: 1.7 !important;
-  max-width: 800px !important;
+  max-width: 1000px !important;
   margin: 0 auto 30px !important;
   text-align: center !important;
 }
@@ -462,6 +462,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   .hero-title { top: 28%; }
   .hero-tagline { top: 74%; }
 }
+
 
 
 
