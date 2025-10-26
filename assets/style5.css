@@ -71,19 +71,36 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
 
 
 
-/* Body Text - High Specificity */
-section p,
-.container .placeholder-text,
+/* Unified Large Text - HIGH SPECIFICITY */
 .placeholder-text,
+section p,
+.container > p,
 .about-content p,
 .wildtails p,
+#about p,
+#wildtails p,
 .media-grid p {
   color: #ccc !important;
-  font-size: 4.5rem !important;
+  font-size: 1.75rem !important;   /* Clear upgrade from default */
   line-height: 1.7 !important;
-  max-width: 800px;
-  margin: 0 auto 30px;
-  text-align: center;
+  max-width: 800px !important;
+  margin: 0 auto 30px !important;
+  text-align: center !important;
+}
+
+/* Card Descriptions - Also Larger */
+.card p {
+  font-size: 1.15rem !important;
+  color: #bbb !important;
+  margin: 10px 0 0 !important;
+  text-align: left !important;
+}
+
+/* Hero Subtitle - Keep readable */
+.hero-tagline p {
+  font-size: 1.3rem !important;   /* Already working, but lock it in */
+  color: #ccc !important;
+  margin: 0 0 20px !important;
 }
 
 /* For non-placeholder paragraphs (e.g., hero tagline, media item) */
@@ -94,12 +111,7 @@ section p,
   line-height: 1.6;
 }
 
-/* Card Descriptions */
-.card p {
-  font-size: 1.1rem;       /* Slightly smaller than body, but still clear */
-  color: #bbb;
-  margin: 10px 0 0;
-}
+
 
 /* Header */
 .header {
@@ -445,6 +457,7 @@ section p,
   .hero-title { top: 28%; }
   .hero-tagline { top: 74%; }
 }
+
 
 
 
