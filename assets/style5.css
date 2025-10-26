@@ -74,7 +74,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
 /* Body Text - Larger & More Readable */
 .placeholder-text {
   color: #ccc;
-  font-size: 1.15rem;     /* ~18px on most browsers */
+  font-size: 2.15rem;     /* ~18px on most browsers */
   line-height: 1.7;
   max-width: 800px;
   margin: 0 auto 30px;
@@ -440,6 +440,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   .hero-title { top: 28%; }
   .hero-tagline { top: 74%; }
 }
+
 
 
 
