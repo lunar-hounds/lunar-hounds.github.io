@@ -73,18 +73,23 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
 
 /* Unified Large Text - HIGH SPECIFICITY */
 .placeholder-text,
-section p,
-.container > p,
-.about-content p,
-.wildtails p,
-#about p,
-#wildtails p,
-.media-grid p {
+.placeholder-text p,
+.placeholder-text h3,
+.placeholder-text h4 {
   color: #ccc !important;
-  font-size: 1.75rem !important;   /* Clear upgrade from default */
+  font-size: 1.25rem !important;
   line-height: 1.7 !important;
   max-width: 800px !important;
   margin: 0 auto 30px !important;
+  text-align: center !important;
+}
+
+.placeholder-text p {
+  text-align: left !important;
+}
+
+.placeholder-text h3,
+.placeholder-text h4 {
   text-align: center !important;
 }
 
@@ -457,6 +462,7 @@ section p,
   .hero-title { top: 28%; }
   .hero-tagline { top: 74%; }
 }
+
 
 
 
