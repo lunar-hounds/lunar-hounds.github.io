@@ -102,19 +102,26 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
 }
 
 /* Hero Subtitle - Keep readable */
-.hero-tagline p {
-  font-size: 1.3rem !important;   /* Already working, but lock it in */
-  color: #ccc !important;
-  margin: 0 0 20px !important;
+.hero-tagline {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1000px;     /* ✅ visually constrained width */
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
-/* For non-placeholder paragraphs (e.g., hero tagline, media item) */
-.hero-tagline p,
-.section-subtitle,
-.media-item {
-  font-size: 1.125rem;     /* Unified readable size */
-  line-height: 1.6;
-}
+
 
 
 
