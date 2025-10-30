@@ -72,26 +72,28 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
 
 
 /* Unified Large Text - HIGH SPECIFICITY */
-.placeholder-text,
-.placeholder-text p,
-.placeholder-text h3,
-.placeholder-text h4 {
-  color: #ccc !important;
-  font-size: 1.2rem !important;
-  line-height: 1.7 !important;
-  max-width: 1000px !important;
-  margin: 0 auto 30px !important;
-  text-align: center !important;
+.placeholder-text {
+  color: #ccc;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 900px;       /* visually constrained width */
+  margin: 30px auto;      /* centers and adds vertical spacing */
+  padding: 0 20px;
+  text-align: center;     /* center everything inside by default */
+  display: block;
 }
 
-.placeholder-text p {
-  text-align: left !important;
-}
-
+/* Optional: keep headings always centered */
 .placeholder-text h3,
 .placeholder-text h4 {
-  text-align: center !important;
+  text-align: center;
 }
+
+/* If you have other <p> that should be left-aligned elsewhere, create a specific class */
+.placeholder-text-left p {
+  text-align: left;
+}
+
 
 /* Card Descriptions - Also Larger */
 .card p {
@@ -245,23 +247,7 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   margin-bottom: 50px; /* Space before next element */
 }
 
-/* Subtitle & Mint Button Container */
-.hero-tagline {
-  position: absolute;
-  top: 70%; /* Below the moon */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  max-width: 600px;
-  margin-top: 30px; /* Extra breathing room */
-}
 
-.hero-tagline p {
-  color: #ccc;
-  font-size: 1.3rem;
-  margin: 0 0 20px;
-  text-shadow: 0 0 10px rgba(255,255,255,0.2);
-}
 
 /* Buttons */
 .btn-primary {
@@ -510,14 +496,8 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   margin-bottom: 30px; 
 }
 
-/* Center the text below the button */
-.placeholder-text {
-  text-align: center;
-  display: block;
-  max-width: 900px;
-  margin: 0 auto;    
-  padding: 0 20px;    
-}
+
+
 
 
 
