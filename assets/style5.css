@@ -482,6 +482,11 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
 }
 
+.wildtails-text {
+  text-align: center;
+  margin-top: 30px;
+}
+
 
 
 
