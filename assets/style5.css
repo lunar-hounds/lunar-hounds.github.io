@@ -486,12 +486,16 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 40px; /* spacing from the grid above */
 }
 
 .wildtails-text {
   text-align: center;
-  margin-top: 30px;
+  max-width: 600px; /* prevents ugly line breaks */
+  line-height: 1.4;
 }
+
+
 
 
 
