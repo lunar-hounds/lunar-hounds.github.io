@@ -501,13 +501,24 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   line-height: 1.4;
 }
 
+/* Center mint button */
 .mint-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 30px; 
-   margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px; 
 }
+
+/* Center the text below the button */
+.placeholder-text {
+  text-align: center;
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;    
+  padding: 0 20px;    
+}
+
 
 
 
