@@ -486,12 +486,11 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 40px; /* spacing from the grid above */
-}
+  margin-top: 40px; 
 
 .wildtails-text {
   text-align: center;
-  max-width: 600px; /* prevents ugly line breaks */
+  max-width: 600px; 
   line-height: 1.4;
 }
 
@@ -499,8 +498,10 @@ h3 { font-size: 1.5rem; margin-bottom: 10px; }
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 30px; /* same spacing as you had inline */
+  margin-top: 30px; 
+   margin-bottom: 25px;
 }
+
 
 
 
